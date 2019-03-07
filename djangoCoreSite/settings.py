@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 import secrets
+import variable_settings
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -24,9 +25,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = secrets.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = variable_settings.DEBUG
 
-ALLOWED_HOSTS = ['adam-mcdaniel.com', '134.209.56.22', 'localhost']
+ALLOWED_HOSTS = variable_settings.ALLOWED_HOSTS
 
 
 # Application definition
@@ -76,12 +77,7 @@ WSGI_APPLICATION = 'djangoCoreSite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+DATABASES = variable_settings.DATABASES
 
 
 # Password validation
