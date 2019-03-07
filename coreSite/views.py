@@ -3,4 +3,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def splash_page (request):
-    return HttpResponse("Splash Page Placeholder!")
+    return render(request, "../static_pages/about_me.html")
