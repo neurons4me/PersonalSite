@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<style>
+    body{
+        background: #6E6F73 ;
+    }
+
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .links-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .skills-list{
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+
+    }
+    .complete-container{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        padding: 15% 5% 15% 5%;
+        background: #AB9F8F;
+        margin: 5% 5% 5% 5%;
+        border: 5px solid #AB9F8F;
+        border-radius: 5px;
+    }
+
+    .code-text{
+        font-family: 'Press Start 2P', cursive;
+        word-wrap: normal;
+    }
+
+    .link-text{
+        font-size: 250%;
+        font-family: monospace;
+    }
+
+    .skills-text{
+        font-family: monospace;
+    }
+
+</style>
+
+<body>
+
+<div class="complete-container">
+<div class="intro-container">
+        <h1 class="code-text">Hi, my name is Adam.</h1>
+        <h2 class="code-text">I live in the beautiful SF Bay Area where I work to solve organizations document management problems.</h2>
+        <h2 class="code-text"> I am interested in programming, computer science, and design. Drop me a line if you think I can help with your project.</h2>
+    </div>
+    <div class="links-container">
+        <a class="link-text" href="https://github.com/neurons4me"><b>Github</b></a>
+        <a class="link-text" href="https://www.linkedin.com/in/adam-mcdaniel-06a35813"><b>LinkedIn</b></a>
+        <a class="link-text" href="mailto:adammcdaniel1@gmail.com"><b>Email</b></a>
+        <a class="link-text" href="http://adam-mcdaniel.com/blog"><b>Blog</b></a>
+
+    </div>
+    <div class="skills-container">
+        <h3 class="skills-text"">These are a few of my favorite technologies to work with...</h3>
+        <ul class="skills-list">
+            <li class="skills-text">Django</li>
+            <li class="skills-text">Python</li>
+            <li class="skills-text">PostgreSQL</li>
+            <li class="skills-text">Pandas</li>
+            <li class="skills-text">Laserfiche</li>
+        </ul>
+
+    </div>
+</div>
+</body>
+</html>
